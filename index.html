@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+height:100vh;
+background:linear-gradient(135deg,#ffd1dc,#c2e9fb);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+width:340px;
+background:white;
+padding:25px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 30px #0003;
+}
+
+h1{
+color:#ff4b6e;
+margin-bottom:15px;
+}
+
+p{
+color:#444;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:12px;
+border-radius:20px;
+border:1px solid #ddd;
+outline:none;
+}
+
+button{
+margin-top:15px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:20px;
+background:#ff4b6e;
+color:white;
+font-size:16px;
+}
+
+#msg{
+display:none;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="box">
+
+<h1>hlww 😊</h1>
+
+<p>
+A little hint 🕊️<br>
+Your nickname given by me...<br>
+7 letters, last letter is R
+</p>
+
+
+<input id="pass" placeholder="Enter nickname">
+
+<button onclick="check()">Open 🤍</button>
+
+
+<div id="msg">
+
+<p>
+
+Khushbu ☹️<br><br>
+
+Tumne reel seen karke reaction bhi nahi diya th is wajah se thodi overthinking ho rhi hai 😢<br><br>
+
+or tumhe pta hai mera interview bohot achha hua may be next 30 days me part time coder bn jaaunga 😊<br><br>
+
+bus ye clear ker do ki tum mujse bilkul nafrat nahi karti 🤍<br>
+isliye ye reaction bhej dena... nahi to ye 🖤<br><br>
+
+Hn hn muje pta hai abhi bohot lal pili ho rhi hogi isliye cool down iti mehnat se bnayi hai site to bhi sorry 😒<br><br>
+
+Take care byee
+
+</p>
+
+</div>
+
+</div>
+
+
+<script>
+
+function check(){
+
+let pass=document.getElementById("pass").value;
+
+if(pass.toLowerCase()=="kabutar"){
+
+document.getElementById("msg").style.display="block";
+
+}
+else{
+
+alert("Hint yaad karo 🕊️");
+
+}
+
+}
+
+</script>
+
+
+</body>
+</html>
